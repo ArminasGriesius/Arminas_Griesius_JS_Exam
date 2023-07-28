@@ -33,7 +33,6 @@ function svarGramUnc() {
   g = `Jusu svoris gramais yra : ${gramai.toFixed(1)} gramu`;
   oz = `Jusu svoris uncijomis yra : ${uncijos.toFixed(1)} unciju`;
   els.output.innerHTML = "";
-
   const h2El1 = document.createElement("h2");
   const h2El2 = document.createElement("h2");
   const h2El3 = document.createElement("h2");
