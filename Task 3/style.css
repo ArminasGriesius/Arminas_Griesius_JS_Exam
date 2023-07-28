@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -58,4 +58,46 @@
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
+}
+
+.output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 15px;
+}
+
+.userList {
+  border: 5px solid #000;
+  border-radius: 10%;
+  min-width: 200px;
+  padding: 15px;
+  list-style: none;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.userList {
+  background-color: #cecccc;
+}
+.userList li {
+  text-align: center;
+}
+
+/* Tablet */
+@media screen and (min-width: 850px) {
+  .userList {
+    min-width: 300px;
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
 }
