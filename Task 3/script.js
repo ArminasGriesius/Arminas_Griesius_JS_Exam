@@ -13,8 +13,6 @@ būti stilizuota su CSS ir būti responsive;
 "use strict";
 console.log("script.js file was loaded");
 
-("use strict");
-
 const ENDPOINT = "https://api.github.com/users";
 
 const els = {
