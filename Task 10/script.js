@@ -1,7 +1,6 @@
 /* ------------------------------ TASK 10 ---------------------------------------------------
 Sutvarkykite užduoties "Task 10" esančius failus taip, kad veiktų žemiau pateiktos funkcijos.
 -------------------------------------------------------------------------------------------- */
-"use strict";
 console.log("script.js file was loaded");
 
 import { composition } from "./modules/math/composition.js";

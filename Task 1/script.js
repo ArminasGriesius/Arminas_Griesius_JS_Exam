@@ -29,9 +29,9 @@ function svarGramUnc() {
   const svarai = els.kilos.value * 2.2046;
   const gramai = els.kilos.value / 0.001;
   const uncijos = els.kilos.value * 35.274;
-  lb = `Jusu svoris svarais yra : ${svarai.toFixed(1)} svaru`;
-  g = `Jusu svoris gramais yra : ${gramai.toFixed(1)} gramu`;
-  oz = `Jusu svoris uncijomis yra : ${uncijos.toFixed(1)} unciju`;
+  lb = `Svoris svarais yra : ${svarai.toFixed(1)} svaru`;
+  g = `Svoris gramais yra : ${gramai.toFixed(1)} gramu`;
+  oz = `Svoris uncijomis yra : ${uncijos.toFixed(1)} unciju`;
   els.output.innerHTML = "";
   const h2El1 = document.createElement("h2");
   const h2El2 = document.createElement("h2");
