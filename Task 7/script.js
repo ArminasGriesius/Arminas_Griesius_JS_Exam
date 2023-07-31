@@ -14,9 +14,9 @@ const audi = {
   color: "white",
 };
 
-function showObjectKeyValues(obj) {
-  const keyValyesArr = Object.values(obj);
-  console.log("keyValuesArr ===", keyValyesArr);
-  return keyValyesArr;
+function showObjectKeys(obj) {
+  const keysArr = Object.keys(obj);
+  console.log("keysArr ===", keysArr);
+  return keysArr;
 }
-showObjectKeyValues(audi);
+showObjectKeys(audi);
