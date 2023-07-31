@@ -10,19 +10,27 @@ division(a, b) - priima du skaičius ir grąžina jų dalybos rezultatą;
 console.log("script.js file was loaded");
 class Calculator {
   sum(sk1, sk2) {
-    return console.log(`${sk1} + ${sk2} ===`, sk1 + sk2);
+    const sum = sk1 + sk2;
+    console.log(`${sk1} + ${sk2} ===`, sum);
+    return sum;
   }
   subtraction(sk1, sk2) {
-    return console.log(`${sk1} - ${sk2} ===`, sk1 - sk2);
+    const sub = sk1 - sk2;
+    console.log(`${sk1} - ${sk2} ===`, sub);
+    return sub;
   }
   multiplication(sk1, sk2) {
-    return console.log(`${sk1} * ${sk2} ===`, sk1 * sk2);
+    const multi = sk1 * sk2;
+    console.log(`${sk1} * ${sk2} ===`, multi);
+    return multi;
   }
   division(sk1, sk2) {
     if (sk2 === 0) {
       return console.error("no division from zero!!!");
     } else {
-      return console.log(`${sk1} / ${sk2} ===`, sk1 / sk2);
+      const div = sk1 / sk2;
+      console.log(`${sk1} / ${sk2} ===`, div);
+      return div;
     }
   }
 }
