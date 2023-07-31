@@ -22,16 +22,23 @@ let lb = "";
 let g = "";
 let oz = "";
 
-els.form.addEventListener("submit", svarGramUnc);
+els.form.addEventListener("submit", weightConverter);
 
-function svarGramUnc() {
+function weightConverter(event) {
   event.preventDefault();
+  convertWeight();
+  render();
+}
+function convertWeight() {
   const svarai = els.kilos.value * 2.2046;
   const gramai = els.kilos.value / 0.001;
   const uncijos = els.kilos.value * 35.274;
   lb = `Svoris svarais yra : ${svarai.toFixed(1)} svaru`;
   g = `Svoris gramais yra : ${gramai.toFixed(1)} gramu`;
   oz = `Svoris uncijomis yra : ${uncijos.toFixed(1)} unciju`;
+}
+
+function render() {
   els.output.innerHTML = "";
   const h2El1 = document.createElement("h2");
   const h2El2 = document.createElement("h2");
@@ -43,5 +50,4 @@ function svarGramUnc() {
   h2El2.append(g);
   h2El3.append(oz);
   output.append(h2El1, h2El2, h2El3);
-  return lb, g;
 }
