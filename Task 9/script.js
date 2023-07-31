@@ -21,11 +21,11 @@ class Movie {
   }
   wasExpensive() {
     if (this.budget >= 100000000) {
-      console.log("Expensive movie indeed");
-      return console.log(true);
+      console.log("Expensive movie?", true);
+      return true;
     } else {
-      console.log("Cheap movie");
-      return console.log(false);
+      console.log("Expensive movie?", false);
+      return false;
     }
   }
 }
